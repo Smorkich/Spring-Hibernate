@@ -27,7 +27,6 @@ public class UserDaoImp implements UserDao {
       return query.getResultList();
    }
 
-   @Transactional
    @Override
    public User getUserByCar(String model, int series) {
       String hql = "FROM User user WHERE user.car.model = :model and user.car.series = :series";
